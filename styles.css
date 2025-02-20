@@ -1,4 +1,4 @@
-/* Enhanced group card hover effects */
+/* group card hover effects */
 .group-card-hover {
     transition: all 0.3s ease-in-out;
     border: 1px solid transparent;
@@ -28,7 +28,7 @@
     background: #011d44;
 }
 
-/* Enhanced sidebar and button styles */
+/*  sidebar and button styles */
 .sidebar-button {
     width: 44px;
     height: 44px;

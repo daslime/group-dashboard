@@ -1,0 +1,80 @@
+/* Enhanced group card hover effects */
+.group-card-hover {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.group-card-hover:hover {
+    transform: translateY(-4px);
+    border-color: rgba(124, 58, 237, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom scrollbar for the container */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e2435;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #011d44;
+}
+
+/* Enhanced sidebar and button styles */
+.sidebar-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.sidebar-button:hover {
+    background-color: #252a3c;
+    color: #ffffff !important;
+    border-color: rgba(124, 58, 237, 0.3);
+    transform: translateX(2px);
+}
+
+.sidebar-button i {
+    font-size: 1.3rem;
+}
+
+/* Header button styles */
+.header-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252a3c;
+    color: #374151;
+    margin: 0 4px;
+    border: 1px solid transparent;
+}
+
+.header-button:hover {
+    background-color: #2a2f42;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    border-color: rgba(124, 58, 237, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-button i {
+    font-size: 1.3rem;
+}

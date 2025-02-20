@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groups Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-[#1a1f2e] min-h-screen font-['PT Serif']">
+    <div class="container mx-auto p-8">
+        <!-- Main Content Area -->
+        <div class="bg-[#1e2435] rounded-2xl p-8 max-w-5xl mx-auto shadow-2xl border border-gray-800">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-8">
+                <div class="flex items-center gap-3">
+                    <button class="header-button text-gray-400">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <h1 class="text-gray-200 text-xl font-semibold">Groups</h1>
+                </div>
+                <div class="flex gap-3">
+                    <button class="header-button text-gray-400">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button class="header-button text-gray-400">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="fixed left-6 top-1/4 bg-[#1e2435] rounded-lg p-4 shadow-lg border border-gray-800">
+                <div class="flex flex-col gap-6">
+                    <button class="sidebar-button text-gray-400">
+                        <i class="far fa-comment-alt"></i>
+                    </button>
+                    <button class="sidebar-button text-gray-400 bg-[#252a3c] text-white">
+                        <i class="far fa-user"></i>
+                    </button>
+                    <button class="sidebar-button text-gray-400">
+                        <i class="far fa-clock"></i>
+                    </button>
+                    <button class="sidebar-button text-gray-400">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Groups Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-24">
+                <!-- Create Group Card -->
+                <div class="bg-[#252a3c] rounded-xl p-6 flex flex-col items-center justify-center cursor-pointer hover:bg-[#2a2f42] transition-colors group-card-hover">
+                    <div class="w-12 h-12 bg-[#2a2f42] rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-plus text-gray-400"></i>
+                    </div>
+                    <span class="text-gray-400">Create Group</span>
+                </div>
+
+                <!-- Cuisine Group -->
+                <div class="bg-[#252a3c] cursor-pointer rounded-xl p-6 relative group-card-hover">
+                    <div class="absolute top-4 right-4 w-2 h-2 bg-purple-500 rounded-full"></div>
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Cuisine" class="w-16 h-16 rounded-full mb-4 object-cover">
+                    <h3 class="text-white text-lg font-semibold mb-2">Cuisine</h3>
+                    <p class="text-gray-400 text-sm">36 members</p>
+                </div>
+
+                <!-- Art Group -->
+                <div class="bg-[#252a3c] cursor-pointer rounded-xl p-6 relative group-card-hover">
+                    <div class="absolute top-4 right-4 w-2 h-2 bg-purple-500 rounded-full"></div>
+                    <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968" alt="Art" class="w-16 h-16 rounded-full mb-4 object-cover">
+                    <h3 class="text-white text-lg font-semibold mb-2">Art</h3>
+                    <p class="text-gray-400 text-sm">9 members</p>
+                </div>
+
+                <!-- Workout Group -->
+                <div class="bg-[#252a3c] cursor-pointer rounded-xl p-6 relative group-card-hover">
+                    <div class="absolute top-4 right-4 w-2 h-2 bg-purple-500 rounded-full"></div>
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="Workout" class="w-16 h-16 rounded-full mb-4 object-cover">
+                    <h3 class="text-white text-lg font-semibold mb-2">Workout</h3>
+                    <p class="text-gray-400 text-sm">27 members</p>
+                </div>
+
+                <!-- Gaming Group -->
+                <div class="bg-[#252a3c] cursor-pointer rounded-xl p-6 relative group-card-hover">
+                    <div class="absolute top-4 right-4 w-2 h-2 bg-purple-500 rounded-full"></div>
+                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc" alt="Gaming" class="w-16 h-16 rounded-full mb-4 object-cover">
+                    <h3 class="text-white text-lg font-semibold mb-2">Gaming</h3>
+                    <p class="text-gray-400 text-sm">105 members</p>
+                </div>
+
+                <!-- Hiking Group -->
+                <div class="bg-[#252a3c] cursor-pointer rounded-xl p-6 relative group-card-hover">
+                    <div class="absolute top-4 right-4 w-2 h-2 bg-purple-500 rounded-full"></div>
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306" alt="Hiking" class="w-16 h-16 rounded-full mb-4 object-cover">
+                    <h3 class="text-white text-lg font-semibold mb-2">Hiking</h3>
+                    <p class="text-gray-400 text-sm">97 members</p>
+                </div>
+
+                <!-- Yoga Group -->
+                <div class="bg-[#252a3c] cursor-pointer rounded-xl p-6 relative group-card-hover">
+                    <div class="absolute top-4 right-4 w-2 h-2 bg-purple-500 rounded-full"></div>
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b" alt="Yoga" class="w-16 h-16 rounded-full mb-4 object-cover">
+                    <h3 class="text-white text-lg font-semibold mb-2">Yoga</h3>
+                    <p class="text-gray-400 text-sm">65 members</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
